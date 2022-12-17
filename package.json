@@ -75,10 +75,12 @@
       "path": "./node_modules/@digitalroute/cz-conventional-changelog-for-jira",
       "skipScope": false,
       "scopes": [
+        "",
         "auth",
         "ci",
         "data",
         "database",
+        "documentation",
         "deps",
         "handlers",
         "helpers",

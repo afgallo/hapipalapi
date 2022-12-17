@@ -1,6 +1,7 @@
+![workflow](https://github.com/afgallo/hapipalapi/actions/workflows/main.yml/badge.svg)
 # HapipalApi
 
-A **template** for building Web Services with hapijs and hapi pal, designed for easy deployment and built with a bunch of opinions that you may or may not like it :)
+A **template** for building Rest APIs with hapijs and hapi pal, designed for easy deployment and built with a bunch of opinions that you may or may not like it :)
 
 ## Getting Started
 
