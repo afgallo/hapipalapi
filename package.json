@@ -1,0 +1,102 @@
+{
+  "version": "1.0.0",
+  "name": "hapipalapi",
+  "description": "A hapi pal Restful Api Template for hapi.js deployments",
+  "author": {
+    "email": "afgallo@gmail.com",
+    "name": "Andre Gallo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afgallo/hapipalapi.git"
+  },
+  "keywords": [
+    "hapi",
+    "hapijs",
+    "hapipal",
+    "api",
+    "template",
+    "rest"
+  ],
+  "license": "MIT",
+  "main": "src/lib/index.js",
+  "type": "module",
+  "directories": {
+    "lib": "src/lib",
+    "test": "src/test"
+  },
+  "scripts": {
+    "start": "node src/server/index.js",
+    "test": "c8 lab ./src/test -a @hapi/code -L",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@hapi/boom": "10.0.0",
+    "@hapi/glue": "9.0.0",
+    "@hapi/hapi": "21.1.0",
+    "@hapi/hoek": "11.0.2",
+    "@hapi/nes": "13.0.0",
+    "@hapi/wreck": "18.0.0",
+    "@hapipal/confidence": "6.0.2",
+    "@hapipal/haute-couture": "4.3.1",
+    "@hapipal/hpal": "3.1.0",
+    "@hapipal/hpal-debug": "2.1.0",
+    "@hapipal/toys": "3.2.0",
+    "dotenv": "16.0.3",
+    "exiting": "6.1.0",
+    "hapi-pino": "11.0.1",
+    "joi": "17.7.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "17.3.0",
+    "@commitlint/config-conventional": "17.3.0",
+    "@digitalroute/cz-conventional-changelog-for-jira": "7.5.1",
+    "@hapi/code": "9.0.2",
+    "@hapi/eslint-plugin": "6.0.0",
+    "@hapi/lab": "25.0.1",
+    "c8": "7.12.0",
+    "commitizen": "4.2.6",
+    "eslint": "8.30.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-config-standard": "17.0.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-n": "15.6.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-promise": "6.1.1",
+    "husky": "8.0.2",
+    "lint-staged": "13.1.0",
+    "pino-pretty": "9.1.1",
+    "prettier": "2.8.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/@digitalroute/cz-conventional-changelog-for-jira",
+      "skipScope": false,
+      "scopes": [
+        "auth",
+        "ci",
+        "data",
+        "database",
+        "deps",
+        "handlers",
+        "helpers",
+        "infra",
+        "plugins",
+        "routes",
+        "services",
+        "tooling",
+        "unit-test",
+        "utils"
+      ],
+      "defaultScope": "",
+      "jiraPrefix": "HPA",
+      "jiraPrepend": "[",
+      "jiraAppend": "]"
+    }
+  },
+  "lint-staged": {
+    "*.js": "npm run lint:fix"
+  }
+}
