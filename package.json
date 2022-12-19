@@ -19,15 +19,22 @@
     "rest"
   ],
   "license": "MIT",
-  "main": "src/lib/index.js",
+  "main": "lib/index.js",
   "type": "module",
   "directories": {
-    "lib": "src/lib",
-    "test": "src/test"
+    "lib": "lib",
+    "test": "test"
   },
   "scripts": {
-    "start": "node src/server/index.js",
-    "test": "c8 lab ./src/test -a @hapi/code -L",
+    "build:test": "docker-compose build test",
+    "build:web": "docker-compose build web",
+    "docker:lint": "docker-compose run test npm run lint",
+    "docker:start": "docker-compose up -d web",
+    "docker:stop": "docker-compose stop web",
+    "docker:test": "docker-compose run test npm test",
+    "docker:test:ci": "docker-compose up --build test_base",
+    "start": "node ./server/index.js",
+    "test": "c8 lab ./test -a @hapi/code -L",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepare": "husky install"
@@ -67,6 +74,7 @@
     "eslint-plugin-promise": "6.1.1",
     "husky": "8.0.2",
     "lint-staged": "13.1.0",
+    "nodemon": "2.0.20",
     "pino-pretty": "9.1.1",
     "prettier": "2.8.1"
   },

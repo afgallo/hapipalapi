@@ -1,7 +1,7 @@
 ![workflow](https://github.com/afgallo/hapipalapi/actions/workflows/main.yml/badge.svg)
 # HapipalApi
 
-A **template** for building Rest APIs with hapijs and hapi pal, designed for easy deployment and built with a bunch of opinions that you may or may not like it :)
+A **template** for building Rest APIs with hapijs and hapi pal, designed for easy deployment and built with a bunch of opinions that you may or may not like it 😀
 
 ## Getting Started
 
@@ -35,6 +35,11 @@ npm start
 - [Husky](https://github.com/typicode/husky) - Modern native git hooks made easy
 - [Lint-staged](https://github.com/okonet/lint-staged) - Run linters on git staged files
 
+And much more ... checkout `package.json` for a complete list of dependencies.
+
+## Docker
+You can optionally use docker as it's backed in into the template. More information can be found [here](DOCKER.md).
+
 ## Contributing
 
 To contribute to HapipalApi, please follow the [GitHub Flow](https://guides.github.com/introduction/flow/) workflow.
@@ -47,3 +52,7 @@ To contribute to HapipalApi, please follow the [GitHub Flow](https://guides.gith
 ## License
 
 HapipalApi is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgment
+
+This template takes inspiration from the hapi pal [boilerplate](https://github.com/hapipal/boilerplate)

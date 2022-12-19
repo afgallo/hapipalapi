@@ -1,7 +1,6 @@
 {
-  "src": "src",
   "all": true,
-  "exclude": ["src/lib/plugins/**", "src/server/**", "src/lib/.hc.js", "src/test/**" ],
+  "exclude": ["commitlint.config.cjs", "lib/plugins/**", "server/**", "lib/.hc.js", "test/**" ],
   "lines": 100,
   "branches": 100,
   "functions": 100

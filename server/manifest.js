@@ -4,7 +4,7 @@ import Confidence from '@hapipal/confidence'
 import Toys from '@hapipal/toys'
 
 // Pull .env into process.env
-Dotenv.config({ path: Path.resolve(process.cwd(), 'src/server', '.env') })
+Dotenv.config({ path: Path.resolve(process.cwd(), './server/.env') })
 
 // Glue manifest as a confidence store
 export default new Confidence.Store({
@@ -20,7 +20,7 @@ export default new Confidence.Store({
   register: {
     plugins: [
       {
-        plugin: '../src/lib', // Main plugin
+        plugin: '../lib', // Main plugin
         options: {}
       },
       {
@@ -33,7 +33,8 @@ export default new Confidence.Store({
               options: {
                 colorize: true
               }
-            }
+            },
+            level: 'debug'
           },
           test: {
             transport: {
