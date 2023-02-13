@@ -40,12 +40,12 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@hapi/boom": "10.0.0",
-    "@hapi/glue": "9.0.0",
-    "@hapi/hapi": "21.2.0",
+    "@hapi/boom": "10.0.1",
+    "@hapi/glue": "9.0.1",
+    "@hapi/hapi": "21.2.2",
     "@hapi/hoek": "11.0.2",
-    "@hapi/nes": "13.0.0",
-    "@hapi/wreck": "18.0.0",
+    "@hapi/nes": "13.0.1",
+    "@hapi/wreck": "18.0.1",
     "@hapipal/confidence": "6.0.2",
     "@hapipal/haute-couture": "4.3.1",
     "@hapipal/hpal": "3.1.0",
@@ -54,18 +54,18 @@
     "dotenv": "16.0.3",
     "exiting": "6.1.0",
     "hapi-pino": "11.0.1",
-    "joi": "17.7.0"
+    "joi": "17.7.1"
   },
   "devDependencies": {
     "@commitlint/cli": "17.4.2",
     "@commitlint/config-conventional": "17.4.2",
     "@digitalroute/cz-conventional-changelog-for-jira": "8.0.0",
-    "@hapi/code": "9.0.2",
+    "@hapi/code": "9.0.3",
     "@hapi/eslint-plugin": "6.0.0",
-    "@hapi/lab": "25.1.0",
+    "@hapi/lab": "25.1.2",
     "c8": "7.12.0",
     "commitizen": "4.3.0",
-    "eslint": "8.32.0",
+    "eslint": "8.34.0",
     "eslint-config-prettier": "8.6.0",
     "eslint-config-standard": "17.0.0",
     "eslint-plugin-import": "2.27.5",
@@ -73,10 +73,10 @@
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-promise": "6.1.1",
     "husky": "8.0.3",
-    "lint-staged": "13.1.0",
+    "lint-staged": "13.1.1",
     "nodemon": "2.0.20",
-    "pino-pretty": "9.1.1",
-    "prettier": "2.8.3"
+    "pino-pretty": "9.2.0",
+    "prettier": "2.8.4"
   },
   "config": {
     "commitizen": {
