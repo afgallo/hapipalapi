@@ -22,7 +22,8 @@ describe('API', () => {
 
       expect(response.statusCode).to.equal(200)
       expect(response.result).to.be.an.object()
-      expect(response.result.message).to.contain('Welcome')
+      expect(response.result.message).to.contain('Hi')
+      expect(response.result.serverDateTime).to.be.a.date()
     })
   })
 })
