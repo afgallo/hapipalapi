@@ -42,7 +42,7 @@
   "dependencies": {
     "@hapi/boom": "10.0.1",
     "@hapi/glue": "9.0.1",
-    "@hapi/hapi": "21.2.2",
+    "@hapi/hapi": "21.3.0",
     "@hapi/hoek": "11.0.2",
     "@hapi/nes": "13.0.1",
     "@hapi/wreck": "18.0.1",
@@ -57,8 +57,8 @@
     "joi": "17.7.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.4.2",
-    "@commitlint/config-conventional": "17.4.2",
+    "@commitlint/cli": "17.4.3",
+    "@commitlint/config-conventional": "17.4.3",
     "@digitalroute/cz-conventional-changelog-for-jira": "8.0.0",
     "@hapi/code": "9.0.3",
     "@hapi/eslint-plugin": "6.0.0",
@@ -73,7 +73,7 @@
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-promise": "6.1.1",
     "husky": "8.0.3",
-    "lint-staged": "13.1.1",
+    "lint-staged": "13.1.2",
     "nodemon": "2.0.20",
     "pino-pretty": "9.2.0",
     "prettier": "2.8.4"
